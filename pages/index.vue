@@ -11,13 +11,13 @@ export default {
     callback(null, { title: 'hk' })
   },
   name: 'IndexPage',
+  layout: 'PCLayout',
 }
 </script>
 <style>
 html,
 body {
-  width: 1200px;
-  max-width: 1200px;
+  min-width: 1200px;
 }
 </style>
 

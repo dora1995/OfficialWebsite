@@ -1,11 +1,61 @@
 <template>
   <div class="container">
-    <h1>我是导航栏</h1>
+    <div class="header">
+      <div class="logo">logo</div>
+      <el-menu
+        :default-active="activeIndex"
+        class="el-menu-demo"
+        mode="horizontal"
+        @select="handleSelect"
+      >
+        <el-menu-item index="1">处理中心</el-menu-item>
+        <el-submenu index="2">
+          <template slot="title">我的工作台</template>
+          <el-menu-item index="2-1">选项1</el-menu-item>
+          <el-menu-item index="2-2">选项2</el-menu-item>
+          <el-menu-item index="2-3">选项3</el-menu-item>
+          <el-submenu index="2-4">
+            <template slot="title">选项4</template>
+            <el-menu-item index="2-4-1">选项1</el-menu-item>
+            <el-menu-item index="2-4-2">选项2</el-menu-item>
+            <el-menu-item index="2-4-3">选项3</el-menu-item>
+          </el-submenu>
+        </el-submenu>
+        <el-menu-item index="3" disabled>消息中心</el-menu-item>
+        <el-menu-item index="4"
+          ><a href="https://www.ele.me" target="_blank"
+            >订单管理</a
+          ></el-menu-item
+        >
+      </el-menu>
+    </div>
     <nuxt></nuxt>
     <h1>我是底部</h1>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      activeIndex: '1',
+    }
+  },
+  methods: {
+    handleSelect() {},
+  },
+}
 </script>
+<style lang="less">
+.header {
+  height: 70px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  background: #fff;
+  display: flex;
+  .logo {
+    flex: 1;
+  }
+}
+</style>

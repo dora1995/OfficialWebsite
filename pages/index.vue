@@ -17,7 +17,7 @@ export default {
 <style>
 html,
 body {
-  min-width: 1200px;
+  min-width: 1400px;
 }
 </style>
 

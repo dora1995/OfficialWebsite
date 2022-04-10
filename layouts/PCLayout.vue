@@ -22,6 +22,65 @@
       </el-menu>
     </div>
     <nuxt></nuxt>
+    <div class="footerShow">
+      <div class="main">
+        <div class="left">
+          <div class="meneuInfo">
+            <div class="title">华鑫集团</div>
+            <div class="listShow">
+              <div class="item">集团概况</div>
+              <div class="item">资质荣誉</div>
+              <div class="item">发展历程</div>
+              <div class="item">企业文化</div>
+            </div>
+          </div>
+          <div class="meneuInfo">
+            <div class="title">产品业绩</div>
+            <div class="listShow">
+              <div class="item">主要产品</div>
+              <div class="item">仓库加工</div>
+              <div class="item">大湾区业绩</div>
+              <div class="item">其他地区业绩</div>
+            </div>
+          </div>
+          
+          <div class="meneuInfo">
+            <div class="title">投资者关系</div>
+            <div class="listShow">
+              <div class="item">最新公告</div>
+              <div class="item">财务信息</div>
+              <div class="item">公司治理</div>
+            </div>
+          </div>
+          <div class="meneuInfo">
+            <div class="title">新闻中心</div>
+            <div class="listShow">
+              <div class="item">集团要闻</div>
+              <div class="item">行业新闻</div>
+            </div>
+          </div>
+          <div class="meneuInfo">
+            <div class="title">联系我们</div>
+            <div class="listShow">
+              <div class="item">联系方式</div>
+              <div class="item">人才招聘</div>
+              <div class="item">合作伙伴</div>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="info">
+            <div class="title">联系我们</div>
+            <div class="content">
+              <div class="infoListItem"><i class="el-icon-message icon"></i><span class="text">邮件:hr.dept@taiheasphalt.com</span></div>
+              <div class="infoListItem"><i class="el-icon-location-outline icon"></i><span class="text">地址:广东省东莞市南城区科创路96号联科产业园23栋</span></div>
+              <div class="infoListItem"><i class="el-icon-phone-outline icon"></i><span class="text">电话:0769-22172888</span></div>
+              <div class="infoListItem"><i class="el-icon-star-off icon"></i><span class="text">官网: www.taiheasphalt.com</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="footer">
       2022©广东华鑫建筑科技有限公司<a href="https://beian.miit.gov.cn/" target="_blank">备案号：粤ICP备19111018号 </a>
     </div>
@@ -55,6 +114,66 @@ export default {
   }
   .elMenu {
     margin-right: 20px;
+  }
+}
+.footerShow {
+  width: 100%;
+  margin: 0 auto;
+  background: #282738;
+  color: #ccc;
+  .main {
+    max-width: 1400px;
+    padding: 50px 100px;
+    display: flex;
+  }
+  .left {
+    flex: 1;
+    display: flex;
+    // justify-content: space-around;
+    .meneuInfo {
+      color: #ccc;
+      margin-right: 30px;
+      .title {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      .listShow {
+        margin-top: 10px;
+        .item {
+          font-size: 16px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  .right {
+
+  }
+  .info {
+    width: 500px;
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .content {
+      margin-top: 20px;
+      .infoListItem {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 10px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        .icon {
+          font-size: 20px;
+          margin-right: 10px;
+          vertical-align: middle;
+        }
+        .text {
+          vertical-align: middle;
+        }
+      }
+    }
   }
 }
 .footer {

@@ -19,6 +19,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '~assets/reset.css',
     'normalize.css/normalize.css',
     'element-ui/lib/theme-chalk/index.css',
     'swiper/dist/css/swiper.css'

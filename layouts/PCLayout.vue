@@ -1,25 +1,21 @@
 <template>
   <div class="container">
-    <div class="header">
-      <div class="logo">logo</div>
-      <el-menu
-        :default-active="activeIndex"
-        class="elMenu"
-        mode="horizontal"
-        @select="handleSelect"
-      >
-        <el-menu-item index="/">首页</el-menu-item>
-        <!-- <el-submenu index="2">
-          <template slot="title">走近XX</template>
-          <el-menu-item index="2-1">选项1</el-menu-item>
-          <el-menu-item index="2-2">选项2</el-menu-item>
-          <el-menu-item index="2-3">选项3</el-menu-item>
-        </el-submenu> -->
-        <el-menu-item index="/produceShow">产品展示</el-menu-item>
-        <el-menu-item index="/dawanquProject">大湾区项目</el-menu-item>
-        <el-menu-item index="/otherProject">其他地区项目</el-menu-item>
-        <el-menu-item index="/news">行业新闻</el-menu-item>
-      </el-menu>
+    <div class="headerMain">
+      <div class="header">
+        <div class="logo">logo</div>
+        <el-menu
+          :default-active="activeIndex"
+          class="elMenu"
+          mode="horizontal"
+          @select="handleSelect"
+        >
+          <el-menu-item index="/">首页</el-menu-item>
+          <el-menu-item index="/produceShow">产品展示</el-menu-item>
+          <el-menu-item index="/dawanquProject">大湾区项目</el-menu-item>
+          <el-menu-item index="/otherProject">其他地区项目</el-menu-item>
+          <el-menu-item index="/news">行业新闻</el-menu-item>
+        </el-menu>
+      </div>
     </div>
     <nuxt></nuxt>
     <div class="footerShow">
@@ -43,7 +39,7 @@
               <div class="item">其他地区业绩</div>
             </div>
           </div>
-          
+
           <div class="meneuInfo">
             <div class="title">投资者关系</div>
             <div class="listShow">
@@ -72,27 +68,45 @@
           <div class="info">
             <div class="title">联系我们</div>
             <div class="content">
-              <div class="infoListItem"><i class="el-icon-message icon"></i><span class="text">邮件:hr.dept@taiheasphalt.com</span></div>
-              <div class="infoListItem"><i class="el-icon-location-outline icon"></i><span class="text">地址:广东省东莞市南城区科创路96号联科产业园23栋</span></div>
-              <div class="infoListItem"><i class="el-icon-phone-outline icon"></i><span class="text">电话:0769-22172888</span></div>
-              <div class="infoListItem"><i class="el-icon-star-off icon"></i><span class="text">官网: www.taiheasphalt.com</span></div>
+              <div class="infoListItem">
+                <i class="el-icon-message icon"></i
+                ><span class="text">邮件:hr.dept@taiheasphalt.com</span>
+              </div>
+              <div class="infoListItem">
+                <i class="el-icon-location-outline icon"></i
+                ><span class="text"
+                  >地址:广东省东莞市南城区科创路96号联科产业园23栋</span
+                >
+              </div>
+              <div class="infoListItem">
+                <i class="el-icon-phone-outline icon"></i
+                ><span class="text">电话:0769-22172888</span>
+              </div>
+              <div class="infoListItem">
+                <i class="el-icon-star-off icon"></i
+                ><span class="text">官网: www.taiheasphalt.com</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
     <div class="footer">
-      2022©广东华鑫建筑科技有限公司<a href="https://beian.miit.gov.cn/" target="_blank">备案号：粤ICP备19111018号 </a>
+      2022©广东华鑫建筑科技有限公司<a
+        href="https://beian.miit.gov.cn/"
+        target="_blank"
+        >备案号：粤ICP备19111018号
+      </a>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      activeIndex: '/',
-    }
+  computed: {
+    activeIndex() {
+      return this.$route.path
+    },
   },
   methods: {
     handleSelect(value) {
@@ -101,10 +115,19 @@ export default {
   },
 }
 </script>
-<style lang="less">
+<style lang="less" scoped>
+.container {
+  padding-top: 70px;
+}
+.headerMain {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  background: #fff;
+  top: 0;
+}
 .header {
   height: 70px;
-  width: 100%;
   max-width: 1400px;
   margin: 0 auto;
   background: #fff;
@@ -147,7 +170,6 @@ export default {
     }
   }
   .right {
-
   }
   .info {
     width: 500px;
@@ -188,7 +210,8 @@ export default {
     margin-left: 10px;
     color: #000;
     text-decoration: none;
-    &:active, &:hover {
+    &:active,
+    &:hover {
       color: #000;
     }
   }

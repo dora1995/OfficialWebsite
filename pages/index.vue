@@ -2,8 +2,17 @@
 <div>
   <div v-swiper:mySwiper="swiperOption">
     <div class="swiper-wrapper">
-      <div v-for="(item, index) in special" :key="index" class="swiper-slide">
+      <!-- <div v-for="(item, index) in special" :key="index" class="swiper-slide">
         <img :src="item.picUrl" style="height: 400px; width: 100%">
+      </div> -->
+      <div class="swiper-slide">
+        <img src="/imgs/home/lunbo1.png" style="height: 400px; width: 100%">
+      </div>
+      <div class="swiper-slide">
+        <img src="/imgs/home/lunbo2.png" style="height: 400px; width: 100%">
+      </div>
+      <div class="swiper-slide">
+        <img src="/imgs/home/lunbo3.png" style="height: 400px; width: 100%">
       </div>
     </div>
     <div id="swiper-pagination" class="swiper-pagination"></div>
@@ -12,18 +21,79 @@
     <div class="title">产品展示</div>
     <div class="content">
       <div class="products">
-      <div v-for="item in product" :key="item.picUrl" class="item">
-        <div class="img"><img :src="item.picUrl"></div>
-        <div class="title">{{item.title}}</div>
+        <div class="item">
+          <div class="img"><img src="/imgs/productShow/1.jpg"></div>
+          <div class="title">房建基坑填充类</div>
+        </div>
+        <div class="item">
+          <div class="img"><img src="/imgs/productShow/2.jpg"></div>
+          <div class="title">公路软基填充类</div>
+        </div>
+        <div class="item">
+          <div class="img"><img src="/imgs/productShow/3.jpg"></div>
+          <div class="title">公路软基填充类</div>
+        </div>
+        <div class="item">
+          <div class="img"><img src="/imgs/productShow/4.jpg"></div>
+          <div class="title">市政管廊填充类</div>
+        </div>
+        <div class="item">
+          <div class="img"><img src="/imgs/productShow/5.jpg"></div>
+          <div class="title">屋面保温找坡类</div>
+        </div>
       </div>
-    </div>
     </div>
   </div>
   <div class="module">
     <div class="title">大湾区项目</div>
     <div class="content">
       <div class="products2">
-      <div v-for="item in list" :key="item.url" class="item">
+        <div class="item">
+          <div class="img"><img src="/imgs/productShow/1.jpg" /></div>
+          <div class="title">
+            <div class="text">房建基坑填充类</div>
+            <div class="time">
+              {{ `服务时间：2022 - 2025` }}
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img"><img src="/imgs/productShow/2.jpg" /></div>
+          <div class="title">
+            <div class="text">公路软基填充类</div>
+            <div class="time">
+              {{ `服务时间：2022 - 2025` }}
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img"><img src="/imgs/productShow/3.jpg" /></div>
+          <div class="title">
+            <div class="text">房建基坑填充类</div>
+            <div class="time">
+              {{ `服务时间：2022 - 2025` }}
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img"><img src="/imgs/productShow/4.jpg" /></div>
+          <div class="title">
+            <div class="text">市政管廊填充类</div>
+            <div class="time">
+              {{ `服务时间：2022 - 2025` }}
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img"><img src="/imgs/productShow/5.jpg" /></div>
+          <div class="title">
+            <div class="text">屋面保温找坡类</div>
+            <div class="time">
+              {{ `服务时间：2022 - 2025` }}
+            </div>
+          </div>
+        </div>
+      <!-- <div v-for="item in list" :key="item.url" class="item">
         <div class="img"><img :src="item.url" /></div>
         <div class="title">
           <div class="text">{{ item.title }}</div>
@@ -31,7 +101,7 @@
             {{ `服务时间：${item.beginYear} - ${item.endYear}` }}
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
     </div>
   </div>
@@ -123,7 +193,7 @@ body {
 .products {
     max-width: 1400px;
     margin: 10px auto;
-    padding: 20px 120px;
+    padding: 20px 110px;
     .item {
       display: inline-block;
       width: 260px;
@@ -155,7 +225,7 @@ body {
 .products2 {
     max-width: 1400px;
     margin: 10px auto;
-    padding: 20px 135px;
+    padding: 20px 130px;
     .item {
       position: relative;
       display: inline-block;

@@ -4,13 +4,31 @@
       <img src="/imgs/productShow/bg.jpeg" alt="">
     </div>
     <div class="products">
-      <div v-for="item in list" :key="item.url" class="item">
+      <div class="item">
+        <div class="img"><img src="/imgs/productShow/1.jpg"></div>
+        <div class="title">房建基坑填充类</div>
+      </div>
+      <div class="item">
+        <div class="img"><img src="/imgs/productShow/2.jpg"></div>
+        <div class="title">公路软基填充类</div>
+      </div>
+      <div class="item">
+        <div class="img"><img src="/imgs/productShow/3.jpg"></div>
+        <div class="title">公路软基填充类</div>
+      </div>
+      <div class="item">
+        <div class="img"><img src="/imgs/productShow/4.jpg"></div>
+        <div class="title">市政管廊填充类</div>
+      </div>
+      <div class="item">
+        <div class="img"><img src="/imgs/productShow/5.jpg"></div>
+        <div class="title">屋面保温找坡类</div>
+      </div>
+      <!-- <div v-for="item in list" :key="item.url" class="item">
         <div class="img"><img :src="item.url"></div>
         <div class="title">{{item.title}}</div>
-      </div>
-
+      </div> -->
     </div>
-
   </div>
 </template>
 
@@ -44,7 +62,7 @@ export default {
   .products {
     max-width: 1400px;
     margin: 40px auto;
-    padding: 70px 120px;
+    padding: 70px 110px;
     // display: flex;
     // flex-wrap: wrap;
     // justify-content: space-around;

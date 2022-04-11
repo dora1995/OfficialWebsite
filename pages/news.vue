@@ -4,7 +4,63 @@
       <img src="/imgs/news/bg.jpeg" alt="" />
     </div>
     <div class="news">
-      <div v-for="(item, index) in newList" :key="index" class="item">
+      <div class="item">
+        <div class="img">
+          <img src="/imgs/news/1.png" />
+          <div class="time">
+            <div class="day">{{ `07 - 07` }}</div>
+            <div class="year">22</div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="title">乌兰浩特市餐厨垃圾处理项目（一期工程）环境影响评价</div>
+          <div class="text">泡沬混凝土又叫发泡混凝土，是通过发泡机器的发泡系统将获得专利权的泡沬剂充分发泡，并 将泡沬与水泥浆均匀搅拌，然后经过发泡机的泵送系统进行现浇施工或模具成型，经自然养护所形 成的一种含有大量封闭气孔的新型轻质保温材料。它属于气泡状绝热材料，突出特点是在混凝土内 部形成封闭的泡沬孔，使混凝土轻质化和保温隔热化。</div>
+          <div class="tolook">了解更多</div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="img">
+          <img src="/imgs/news/1.png" />
+          <div class="time">
+            <div class="day">{{ `07 - 07` }}</div>
+            <div class="year">22</div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="title">乌兰浩特市餐厨垃圾处理项目（一期工程）环境影响评价</div>
+          <div class="text">泡沬混凝土又叫发泡混凝土，是通过发泡机器的发泡系统将获得专利权的泡沬剂充分发泡，并 将泡沬与水泥浆均匀搅拌，然后经过发泡机的泵送系统进行现浇施工或模具成型，经自然养护所形 成的一种含有大量封闭气孔的新型轻质保温材料。它属于气泡状绝热材料，突出特点是在混凝土内 部形成封闭的泡沬孔，使混凝土轻质化和保温隔热化。</div>
+          <div class="tolook">了解更多</div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="img">
+          <img src="/imgs/news/1.png" />
+          <div class="time">
+            <div class="day">{{ `07 - 07` }}</div>
+            <div class="year">22</div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="title">乌兰浩特市餐厨垃圾处理项目（一期工程）环境影响评价</div>
+          <div class="text">泡沬混凝土又叫发泡混凝土，是通过发泡机器的发泡系统将获得专利权的泡沬剂充分发泡，并 将泡沬与水泥浆均匀搅拌，然后经过发泡机的泵送系统进行现浇施工或模具成型，经自然养护所形 成的一种含有大量封闭气孔的新型轻质保温材料。它属于气泡状绝热材料，突出特点是在混凝土内 部形成封闭的泡沬孔，使混凝土轻质化和保温隔热化。</div>
+          <div class="tolook">了解更多</div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="img">
+          <img src="/imgs/news/1.png" />
+          <div class="time">
+            <div class="day">{{ `07 - 07` }}</div>
+            <div class="year">22</div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="title">乌兰浩特市餐厨垃圾处理项目（一期工程）环境影响评价</div>
+          <div class="text">泡沬混凝土又叫发泡混凝土，是通过发泡机器的发泡系统将获得专利权的泡沬剂充分发泡，并 将泡沬与水泥浆均匀搅拌，然后经过发泡机的泵送系统进行现浇施工或模具成型，经自然养护所形 成的一种含有大量封闭气孔的新型轻质保温材料。它属于气泡状绝热材料，突出特点是在混凝土内 部形成封闭的泡沬孔，使混凝土轻质化和保温隔热化。</div>
+          <div class="tolook">了解更多</div>
+        </div>
+      </div>
+      <!-- <div v-for="(item, index) in newList" :key="index" class="item">
         <div class="img">
           <img :src="item.img" />
           <div class="time">
@@ -17,7 +73,7 @@
           <div class="text">{{ item.alt }}</div>
           <div class="tolook">了解更多</div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>

@@ -1,12 +1,12 @@
 <template>
   <div class="index">
     <div class="bg">
-      <img src="/qz-mall/imgs/news/bg.jpeg" alt="" />
+      <img src="/imgs/news/bg.jpeg" alt="" />
     </div>
     <div class="news">
       <div class="item">
         <div class="img">
-          <img src="/qz-mall/imgs/news/1.png" />
+          <img src="/imgs/news/1.png" />
           <div class="time">
             <div class="day">{{ `07 - 07` }}</div>
             <div class="year">22</div>
@@ -20,7 +20,7 @@
       </div>
       <div class="item">
         <div class="img">
-          <img src="/qz-mall/imgs/news/1.png" />
+          <img src="/imgs/news/1.png" />
           <div class="time">
             <div class="day">{{ `07 - 07` }}</div>
             <div class="year">22</div>
@@ -34,7 +34,7 @@
       </div>
       <div class="item">
         <div class="img">
-          <img src="/qz-mall/imgs/news/1.png" />
+          <img src="/imgs/news/1.png" />
           <div class="time">
             <div class="day">{{ `07 - 07` }}</div>
             <div class="year">22</div>
@@ -48,7 +48,7 @@
       </div>
       <div class="item">
         <div class="img">
-          <img src="/qz-mall/imgs/news/1.png" />
+          <img src="/imgs/news/1.png" />
           <div class="time">
             <div class="day">{{ `07 - 07` }}</div>
             <div class="year">22</div>

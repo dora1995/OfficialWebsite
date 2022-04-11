@@ -2,14 +2,24 @@
   <div class="container">
     <div class="header">
       <div class="logo">logo</div>
+      <div>
+        <img src="~assets/menu.svg" @click="showMenu">
+      </div>
+      <div v-show="menuShow" class="menu">
+        <div class="menuItem" @click="toRoute('/')">首页</div>
+        <div class="menuItem" @click="toRoute('/m/produceShow')">产品展示</div>
+        <div class="menuItem" @click="toRoute('/m/dawanquProject')">大湾区项目</div>
+        <div class="menuItem" @click="toRoute('/m/otherProject')">其他地区项目</div>
+        <div class="menuItem" @click="toRoute('/m/news')">行业新闻</div>
+      </div>
     </div>
     <nuxt></nuxt>
     <div class="footerShow">
-      <div class="listItem">首页</div>
-      <div class="listItem">产品展示</div>
-      <div class="listItem">大湾区项目</div>
-      <div class="listItem">其他地区项目</div>
-      <div class="listItem">行业新闻</div>
+      <div class="listItem" @click="toRoute('/')">首页</div>
+      <div class="listItem" @click="toRoute('/m/produceShow')">产品展示</div>
+      <div class="listItem" @click="toRoute('/m/dawanquProject')">大湾区项目</div>
+      <div class="listItem" @click="toRoute('/m/otherProject')">其他地区项目</div>
+      <div class="listItem" @click="toRoute('/m/news')">行业新闻</div>
     </div>
     <div class="footer">
       2022©广东华鑫建筑科技有限公司<a
@@ -23,19 +33,34 @@
 
 <script>
 export default {
+  data () {
+    return {
+      menuShow: false
+    }
+  },
   methods: {
-    handleSelect(value) {
+    toRoute(value) {
       this.$router.push(value)
+      this.menuShow = false
     },
+    showMenu() {
+      this.menuShow = !this.menuShow
+    }
   },
 }
 </script>
 <style lang="less" scoped>
+// .container {
+//   padding-top: 1.2rem;
+// }
 .header {
-  //   height: 70px;
+  position: relative;
+  font-size: 0.5rem;
+  line-height: 0.5rem;
   background: #fff;
   padding: 0.35rem 0.4rem;
   display: flex;
+  border-bottom: 1px solid #e6e6e6;
   .logo {
     flex: 1;
   }
@@ -51,18 +76,36 @@ export default {
   font-size: 10px;
   .listItem {
     padding: 0.35rem 0.5rem;
-    border: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+  }
+}
+
+.menu {
+  z-index: 999;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  color: #000;
+  font-size: 10px;
+  border-top: 1px solid #e6e6e6;
+  .menuItem {
+    padding: 0.35rem 0.5rem;
+    border-bottom: 1px solid #e6e6e6;
   }
 }
 .footer {
   width: 100%;
   padding: 0.35rem 0;
-  border-bottom: 1px solid #e6e6e6;
-  background: #fff;
-  text-align: center;
+  padding-left: 0.5rem;
+  background: #282738;
+  color: #e6e6e6;
+  font-size: 12px;
   a {
     margin-left: 10px;
-    color: #000;
+    color: #e6e6e6;
     text-decoration: none;
   }
 }

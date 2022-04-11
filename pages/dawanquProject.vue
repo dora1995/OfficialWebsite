@@ -110,7 +110,7 @@ export default {
           font-size: 16px;
           margin-bottom: 10px;
         }
-        time {
+        .time {
           font-size: 16px;
         }
       }

@@ -1,15 +1,24 @@
 <template>
   <div>
-    <div class="index">hello mobile!</div>
     <div v-swiper:mySwiper="swiperOption">
       <div class="swiper-wrapper">
         <div v-for="(item, index) in special" :key="index" class="swiper-slide">
-          <img :src="item.picUrl" style="height: 8rem; width: 100%" />
+          <img :src="item.picUrl" style="height: 6rem; width: 100%" />
         </div>
       </div>
       <div class="swiper-pagination"></div>
-      <!-- <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div> -->
+    </div>
+    <div class="module">
+      <div class="title">主要产品</div>
+      <div class="content">
+        
+      </div>
+    </div>
+    <div class="module">
+      <div class="title">主要业绩</div>
+      <div class="content">
+
+      </div>
     </div>
   </div>
 </template>
@@ -28,25 +37,22 @@ export default {
         autoplay: true,
       },
       special: [
-        {
-          picUrl:
-            'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201603%2F19%2F20160319222813_tBvzd.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1652104511&t=07f469959f163ac85a7fd1bdbd49ad3b',
-        },
-        {
-          picUrl:
-            'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201603%2F19%2F20160319222813_tBvzd.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1652104511&t=07f469959f163ac85a7fd1bdbd49ad3b',
-        },
-        {
-          picUrl:
-            'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201603%2F19%2F20160319222813_tBvzd.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1652104511&t=07f469959f163ac85a7fd1bdbd49ad3b',
-        },
+        { picUrl: '/imgs/home/lunbo1.png' },
+        { picUrl: '/imgs/home/lunbo2.png' },
+        { picUrl: '/imgs/home/lunbo3.png' }
       ],
     }
   },
 }
 </script>
 <style lang="less" scoped>
-.index {
-  background: blue;
+
+.module {
+  margin-top: 0.5rem;
+  .title {
+    text-align: center;
+    font-weight: 400;
+    font-size: 0.5rem;
+  }
 }
 </style>

@@ -19,7 +19,7 @@
 
 <script>
 export default {
-  layout: 'PCLayout',
+  layout: 'H5Layout',
   data() {
     return {
       list: [
@@ -63,45 +63,35 @@ export default {
   .bg {
     text-align: center;
     overflow: hidden;
-    height: 250px;
+    height: 2.5rem;
+    width: 100%;
     img {
       width: 100%;
-      height: 250px;
+      height: 2.5rem;
     }
   }
   .products {
-    max-width: 1400px;
-    margin: 40px auto;
-    padding: 70px 135px;
+    width: 100%;
+    padding: 0.5rem;
     .item {
       position: relative;
-      display: inline-block;
-      width: 350px;
-      margin-right: 40px;
-      margin-bottom: 60px;
-      cursor: pointer;
-      &:hover {
-        transform: scale(1.05);
-      }
-      &:nth-child(3n) {
-        margin-right: 0;
-      }
+      margin-bottom: 1rem;
       .img {
-        width: 350px;
-        height: 300px;
+        width: 100%;
+        height: 4rem;
         img {
-          width: 350px;
-          height: 300px;
+          width: 100%;
+          height: 4rem;
         }
       }
       .title {
         position: absolute;
         bottom: 0;
-        left: 10px;
-        right: 10px;
-        margin-top: 10px;
+        left: 0.5rem;
+        right: 0.5rem;
+        margin-top: 0.5rem;
         text-align: center;
-        padding: 20px;
+        padding: 0.5rem;
         text-align: center;
         background: #fff;
         transform: translateY(50%);

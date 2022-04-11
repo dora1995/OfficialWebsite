@@ -8,15 +8,13 @@
         <div class="img"><img :src="item.url"></div>
         <div class="title">{{item.title}}</div>
       </div>
-
     </div>
-
   </div>
 </template>
 
 <script>
 export default {
-  layout: 'PCLayout',
+  layout: 'H5Layout',
   data() {
     return {
       list: [
@@ -24,6 +22,7 @@ export default {
         { url: '/imgs/productShow/2.jpg', title: '公路软基填充类' },
         { url: '/imgs/productShow/3.jpg', title: '公路软基填充类' },
         { url: '/imgs/productShow/4.jpg', title: '市政管廊填充类' },
+        { url: '/imgs/productShow/5.jpg', title: '屋面保温找坡类' },
         { url: '/imgs/productShow/5.jpg', title: '屋面保温找坡类' },
       ]
     }
@@ -35,37 +34,28 @@ export default {
   .bg {
     text-align: center;
     overflow: hidden;
-    height: 250px;
+    height: 2.5rem;
+    width: 100%;
     img {
       width: 100%;
-      height: 250px;
+      height: 2.5rem;
     }
   }
   .products {
-    max-width: 1400px;
-    margin: 40px auto;
-    padding: 70px 120px;
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: space-around;
+    width: 100%;
+    padding: 0.5rem 0.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     .item {
-      display: inline-block;
-      width: 260px;
-      margin-right: 40px;
-      margin-bottom: 20px;
-      cursor: pointer;
-      &:hover {
-        transform: scale(1.05);
-      }
-      &:nth-child(4n) {
-        margin-right: 0;
-      }
+      width: 4rem;
+      margin-bottom: 0.5rem;
       .img {
-        width: 260px;
-        height: 260px;
+        width: 100%;
+        height: 4rem;
         img {
-          width: 260px;
-          height: 260px;
+          width: 100%;
+          height: 4rem;
         }
       }
       .title {

@@ -24,7 +24,7 @@
 
 <script>
 export default {
-  layout: 'PCLayout',
+  layout: 'H5Layout',
   data() {
     return {
       newList: [
@@ -65,28 +65,26 @@ export default {
   .bg {
     text-align: center;
     overflow: hidden;
-    height: 250px;
+    height: 2.5rem;
+    width: 100%;
     img {
       width: 100%;
-      height: 250px;
+      height: 2.5rem;
     }
   }
   .news {
-    max-width: 1400px;
-    margin: 40px auto;
-    padding: 70px 120px;
+    padding: 0.5rem;
+    padding-top: 1rem;
     .item {
       border: 1px solid #e6e6e6;
-      display: flex;
-      padding: 20px;
-      margin-bottom: 20px;
+      // padding: 0.5rem;
+      margin-bottom: 1rem;
       .img {
         position: relative;
-        width: 250px;
-        margin-right: 30px;
+        width: 100%;
         img {
-          width: 250px;
-          height: 150px;
+          width: 100%;
+          height: 4rem;
           border: 1px solid #e6e6e6;
         }
         .time {
@@ -96,8 +94,8 @@ export default {
           background: #c41a1f;
           padding: 10px;
           color: #fff;
-          transform: translateY(-50%);
-          font-size: 14px;
+          transform: translateY(-30%);
+          font-size: 12px;
           text-align: center;
           .day {
             border-bottom: 1px solid #fff;
@@ -105,26 +103,24 @@ export default {
             padding-bottom: 5px;
           }
           .year {
-            font-size: 18px;
+            font-size: 16px;
           }
         }
       }
       .content {
-        flex: 1;
-        padding-right: 60px;
+        padding: 0.2rem 0.5rem;
         .title {
           width: 100%;
           font-weight: bold;
-          font-size: 18px;
-          margin-bottom: 10px;
+          font-size: 0.5rem;
+          margin-bottom: 0.2rem;
           overflow: hidden;
           text-overflow: ellipsis;
           white-space: nowrap;
         }
         .text {
-          font-size: 16px;
-          line-height: 20px;
-          max-height: 60px;
+          font-size: 0.3rem;
+          line-height: 0.5rem;
           -webkit-line-clamp: 3;
           overflow: hidden;
           display: -webkit-box;
@@ -132,15 +128,9 @@ export default {
         }
         .tolook {
           display: inline-block;
-          margin-top: 20px;
-          padding: 10px 40px;
+          margin-top: 0.3rem;
+          padding: 0.2rem 0.4rem;
           border: 1px solid #e6e6e6;
-          cursor: pointer;
-          &:hover {
-            background: #c41a1f;
-            color: #fff;
-            font-weight: bold;
-          }
         }
       }
     }

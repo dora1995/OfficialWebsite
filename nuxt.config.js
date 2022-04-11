@@ -57,6 +57,14 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
   router: {
+    base: '/qz-mall/',
     middleware: 'checkMobile'
+  },
+  server: {
+    host: '0.0.0.0',
+    port: 3000,
+  },
+  static: {
+    prefix: true
   }
 }

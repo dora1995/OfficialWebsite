@@ -1,11 +1,11 @@
 <template>
   <div class="index">
     <div class="bg">
-      <img src="/imgs/productShow/bg.jpeg" alt="" />
+      <img src="/qz-mall/imgs/productShow/bg.jpeg" alt="" />
     </div>
     <div class="products">
       <!-- <div v-for="item in list" :key="item.url" class="item">
-        <div class="img"><img :src="item.url" /></div>
+        <div class="img"><img :src="/qz-mallitem.url" /></div>
         <div class="title">
           <div class="text">{{ item.title }}</div>
           <div class="time">
@@ -14,7 +14,7 @@
         </div>
       </div> -->
       <div class="item">
-          <div class="img"><img src="/imgs/productShow/1.jpg" /></div>
+          <div class="img"><img src="/qz-mall/imgs/productShow/1.jpg" /></div>
           <div class="title">
             <div class="text">房建基坑填充类</div>
             <div class="time">
@@ -23,7 +23,7 @@
           </div>
         </div>
         <div class="item">
-          <div class="img"><img src="/imgs/productShow/2.jpg" /></div>
+          <div class="img"><img src="/qz-mall/imgs/productShow/2.jpg" /></div>
           <div class="title">
             <div class="text">公路软基填充类</div>
             <div class="time">
@@ -32,7 +32,7 @@
           </div>
         </div>
         <div class="item">
-          <div class="img"><img src="/imgs/productShow/3.jpg" /></div>
+          <div class="img"><img src="/qz-mall/imgs/productShow/3.jpg" /></div>
           <div class="title">
             <div class="text">房建基坑填充类</div>
             <div class="time">
@@ -41,7 +41,7 @@
           </div>
         </div>
         <div class="item">
-          <div class="img"><img src="/imgs/productShow/4.jpg" /></div>
+          <div class="img"><img src="/qz-mall/imgs/productShow/4.jpg" /></div>
           <div class="title">
             <div class="text">市政管廊填充类</div>
             <div class="time">
@@ -50,7 +50,7 @@
           </div>
         </div>
         <div class="item">
-          <div class="img"><img src="/imgs/productShow/5.jpg" /></div>
+          <div class="img"><img src="/qz-mall/imgs/productShow/5.jpg" /></div>
           <div class="title">
             <div class="text">屋面保温找坡类</div>
             <div class="time">

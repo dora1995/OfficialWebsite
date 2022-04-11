@@ -3,16 +3,16 @@
   <div v-swiper:mySwiper="swiperOption">
     <div class="swiper-wrapper">
       <!-- <div v-for="(item, index) in special" :key="index" class="swiper-slide">
-        <img :src="item.picUrl" style="height: 400px; width: 100%">
+        <img :src="/qz-mallitem.picUrl" style="height: 400px; width: 100%">
       </div> -->
       <div class="swiper-slide">
-        <img src="/imgs/home/lunbo1.png" style="height: 400px; width: 100%">
+        <img src="/qz-mall/imgs/home/lunbo1.png" style="height: 400px; width: 100%">
       </div>
       <div class="swiper-slide">
-        <img src="/imgs/home/lunbo2.png" style="height: 400px; width: 100%">
+        <img src="/qz-mall/imgs/home/lunbo2.png" style="height: 400px; width: 100%">
       </div>
       <div class="swiper-slide">
-        <img src="/imgs/home/lunbo3.png" style="height: 400px; width: 100%">
+        <img src="/qz-mall/imgs/home/lunbo3.png" style="height: 400px; width: 100%">
       </div>
     </div>
     <div id="swiper-pagination" class="swiper-pagination"></div>
@@ -22,23 +22,23 @@
     <div class="content">
       <div class="products">
         <div class="item">
-          <div class="img"><img src="/imgs/productShow/1.jpg"></div>
+          <div class="img"><img src="/qz-mall/imgs/productShow/1.jpg"></div>
           <div class="title">房建基坑填充类</div>
         </div>
         <div class="item">
-          <div class="img"><img src="/imgs/productShow/2.jpg"></div>
+          <div class="img"><img src="/qz-mall/imgs/productShow/2.jpg"></div>
           <div class="title">公路软基填充类</div>
         </div>
         <div class="item">
-          <div class="img"><img src="/imgs/productShow/3.jpg"></div>
+          <div class="img"><img src="/qz-mall/imgs/productShow/3.jpg"></div>
           <div class="title">公路软基填充类</div>
         </div>
         <div class="item">
-          <div class="img"><img src="/imgs/productShow/4.jpg"></div>
+          <div class="img"><img src="/qz-mall/imgs/productShow/4.jpg"></div>
           <div class="title">市政管廊填充类</div>
         </div>
         <div class="item">
-          <div class="img"><img src="/imgs/productShow/5.jpg"></div>
+          <div class="img"><img src="/qz-mall/imgs/productShow/5.jpg"></div>
           <div class="title">屋面保温找坡类</div>
         </div>
       </div>
@@ -49,7 +49,7 @@
     <div class="content">
       <div class="products2">
         <div class="item">
-          <div class="img"><img src="/imgs/productShow/1.jpg" /></div>
+          <div class="img"><img src="/qz-mall/imgs/productShow/1.jpg" /></div>
           <div class="title">
             <div class="text">房建基坑填充类</div>
             <div class="time">
@@ -58,7 +58,7 @@
           </div>
         </div>
         <div class="item">
-          <div class="img"><img src="/imgs/productShow/2.jpg" /></div>
+          <div class="img"><img src="/qz-mall/imgs/productShow/2.jpg" /></div>
           <div class="title">
             <div class="text">公路软基填充类</div>
             <div class="time">
@@ -67,7 +67,7 @@
           </div>
         </div>
         <div class="item">
-          <div class="img"><img src="/imgs/productShow/3.jpg" /></div>
+          <div class="img"><img src="/qz-mall/imgs/productShow/3.jpg" /></div>
           <div class="title">
             <div class="text">房建基坑填充类</div>
             <div class="time">
@@ -76,7 +76,7 @@
           </div>
         </div>
         <div class="item">
-          <div class="img"><img src="/imgs/productShow/4.jpg" /></div>
+          <div class="img"><img src="/qz-mall/imgs/productShow/4.jpg" /></div>
           <div class="title">
             <div class="text">市政管廊填充类</div>
             <div class="time">
@@ -85,7 +85,7 @@
           </div>
         </div>
         <div class="item">
-          <div class="img"><img src="/imgs/productShow/5.jpg" /></div>
+          <div class="img"><img src="/qz-mall/imgs/productShow/5.jpg" /></div>
           <div class="title">
             <div class="text">屋面保温找坡类</div>
             <div class="time">
@@ -94,7 +94,7 @@
           </div>
         </div>
       <!-- <div v-for="item in list" :key="item.url" class="item">
-        <div class="img"><img :src="item.url" /></div>
+        <div class="img"><img :src="/qz-mallitem.url" /></div>
         <div class="title">
           <div class="text">{{ item.title }}</div>
           <div class="time">

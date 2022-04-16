@@ -1,7 +1,7 @@
 <template>
   <div class="index">
     <div class="bg">
-      <img src="/imgs/news/bg.jpeg" alt="" />
+      <img src="~assets/imgs/news/bg.jpeg" alt="" />
     </div>
     <div class="news">
       <div v-for="(item, index) in newList" :key="index" class="item">
@@ -60,6 +60,13 @@ export default {
   },
 }
 </script>
+<style>
+html,
+body {
+  width: 100% !important;
+  min-width: 100% !important;
+}
+</style>
 <style lang="less" scoped>
 .index {
   .bg {

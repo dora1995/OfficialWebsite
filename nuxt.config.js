@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Official',
+    title: '广东三板斧建筑工程有限公司',
     htmlAttrs: {
       lang: 'zh-CN',
     },

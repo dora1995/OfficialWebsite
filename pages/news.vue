@@ -1,7 +1,24 @@
 <template>
   <div class="index">
-    <div class="bg">
-      <img src="~assets/imgs/news/bg.jpeg" alt="" />
+   <div v-swiper:mySwiper="swiperOption">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div
+            class="lunbo lun1"
+          ></div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="lunbo lun2"
+          ></div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="lunbo lun3"
+          ></div>
+        </div>
+      </div>
+      <div id="swiper-pagination" class="swiper-pagination"></div>
     </div>
     <div class="news">
       <div class="item">
@@ -83,6 +100,13 @@ export default {
   layout: 'PCLayout',
   data() {
     return {
+      swiperOption: {
+        pagination: {
+          el: '#swiper-pagination',
+        },
+        loop: true,
+        autoplay: true,
+      },
       newList: [
         {
           title:
@@ -124,6 +148,23 @@ body {
 </style>
 <style lang="less" scoped>
 .index {
+  .lunbo {
+  background-position: center;
+  height: 500px;
+  width: 100%;
+  background-size: 1400px auto;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  }
+  .lun1 {
+    background-image: url('/imgs/home/lunbo4.png');
+  }
+  .lun2 {
+    background-image: url('/imgs/home/lunbo5.jpg');
+  }
+  .lun3 {
+    background-image: url('/imgs/home/lunbo3.png');
+  }
   .bg {
     text-align: center;
     overflow: hidden;

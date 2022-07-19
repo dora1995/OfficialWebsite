@@ -75,5 +75,8 @@ body {
 .module {
   margin: 30px 0;
   text-align: center;
+  img {
+    width: 1400px;
+  }
 }
 </style>

@@ -10,8 +10,8 @@
           @select="handleSelect"
         >
           <el-menu-item index="/">公司介绍</el-menu-item>
-          <el-menu-item index="/produceShow">产品特点</el-menu-item>
-          <el-menu-item index="/dawanquProject">产品优势</el-menu-item>
+          <el-menu-item index="/produceCharacteristic">产品特点</el-menu-item>
+          <el-menu-item index="/producTradvantage">产品优势</el-menu-item>
           <el-menu-item index="/otherProject">行业案例</el-menu-item>
           <el-menu-item index="/news">行业新闻</el-menu-item>
         </el-menu>
@@ -19,51 +19,8 @@
     </div>
     <nuxt></nuxt>
     <div class="footerShow">
-      <div class="main">
-        <div class="left">
-          <div class="meneuInfo">
-            <div class="title" @click="handleSelect('/')">华鑫集团</div>
-            <!-- <div class="listShow">
-              <div class="item">集团概况</div>
-              <div class="item">资质荣誉</div>
-              <div class="item">发展历程</div>
-              <div class="item">企业文化</div>
-            </div> -->
-          </div>
-          <div class="meneuInfo">
-            <div class="title" @click="handleSelect('/produceShow')">产品展示</div>
-            <!-- <div class="listShow">
-              <div class="item">主要产品</div>
-              <div class="item">仓库加工</div>
-              <div class="item">大湾区业绩</div>
-              <div class="item">其他地区业绩</div>
-            </div> -->
-          </div>
 
-          <div class="meneuInfo">
-            <div class="title" @click="handleSelect('/dawanquProject')">大湾区项目</div>
-            <!-- <div class="listShow">
-              <div class="item">最新公告</div>
-              <div class="item">财务信息</div>
-              <div class="item">公司治理</div>
-            </div> -->
-          </div>
-          <div class="meneuInfo">
-            <div class="title" @click="handleSelect('/otherProject')">其他地区项目</div>
-            <!-- <div class="listShow">
-              <div class="item">集团要闻</div>
-              <div class="item">行业新闻</div>
-            </div> -->
-          </div>
-          <div class="meneuInfo">
-            <div class="title" @click="handleSelect('/news')">行业新闻</div>
-            <!-- <div class="listShow">
-              <div class="item">联系方式</div>
-              <div class="item">人才招聘</div>
-              <div class="item">合作伙伴</div>
-            </div> -->
-          </div>
-        </div>
+      <div class="main">
         <div class="right">
           <div class="info">
             <div class="title">联系我们</div>
@@ -85,6 +42,10 @@
               <div class="infoListItem">
                 <i class="el-icon-star-off icon"></i
                 ><span class="text">官网: www.taiheasphalt.com</span>
+              </div>
+              <div class="infoListItem">
+                <i class="el-icon-star-off icon"></i
+                ><span class="text">      <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=918846171&site=qq&menu=yes"><img border="0" src="img/qq.png" alt="点击给我发消息" title="点击给我发消息"/>test</a></span>
               </div>
             </div>
           </div>
@@ -145,30 +106,10 @@ export default {
   background: #282738;
   color: #ccc;
   .main {
+    margin: 0 auto;
     max-width: 1400px;
     padding: 50px 100px;
     display: flex;
-  }
-  .left {
-    flex: 1;
-    display: flex;
-    // justify-content: space-around;
-    .meneuInfo {
-      color: #ccc;
-      margin-right: 30px;
-      .title {
-        font-size: 18px;
-        margin-bottom: 20px;
-        cursor: pointer;
-      }
-      .listShow {
-        margin-top: 10px;
-        .item {
-          font-size: 16px;
-          margin-bottom: 10px;
-        }
-      }
-    }
   }
   .right {
   }
@@ -181,7 +122,7 @@ export default {
     .content {
       margin-top: 20px;
       .infoListItem {
-        font-size: 16px;
+        font-size: 14px;
         line-height: 20px;
         margin-bottom: 10px;
         &:last-child {

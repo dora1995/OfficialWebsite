@@ -9,10 +9,10 @@
           mode="horizontal"
           @select="handleSelect"
         >
-          <el-menu-item index="/">首页</el-menu-item>
-          <el-menu-item index="/produceShow">产品展示</el-menu-item>
-          <el-menu-item index="/dawanquProject">大湾区项目</el-menu-item>
-          <el-menu-item index="/otherProject">其他地区项目</el-menu-item>
+          <el-menu-item index="/">公司介绍</el-menu-item>
+          <el-menu-item index="/produceShow">产品特点</el-menu-item>
+          <el-menu-item index="/dawanquProject">产品优势</el-menu-item>
+          <el-menu-item index="/otherProject">行业案例</el-menu-item>
           <el-menu-item index="/news">行业新闻</el-menu-item>
         </el-menu>
       </div>
@@ -22,46 +22,46 @@
       <div class="main">
         <div class="left">
           <div class="meneuInfo">
-            <div class="title">华鑫集团</div>
-            <div class="listShow">
+            <div class="title" @click="handleSelect('/')">华鑫集团</div>
+            <!-- <div class="listShow">
               <div class="item">集团概况</div>
               <div class="item">资质荣誉</div>
               <div class="item">发展历程</div>
               <div class="item">企业文化</div>
-            </div>
+            </div> -->
           </div>
           <div class="meneuInfo">
-            <div class="title">产品业绩</div>
-            <div class="listShow">
+            <div class="title" @click="handleSelect('/produceShow')">产品展示</div>
+            <!-- <div class="listShow">
               <div class="item">主要产品</div>
               <div class="item">仓库加工</div>
               <div class="item">大湾区业绩</div>
               <div class="item">其他地区业绩</div>
-            </div>
+            </div> -->
           </div>
 
           <div class="meneuInfo">
-            <div class="title">投资者关系</div>
-            <div class="listShow">
+            <div class="title" @click="handleSelect('/dawanquProject')">大湾区项目</div>
+            <!-- <div class="listShow">
               <div class="item">最新公告</div>
               <div class="item">财务信息</div>
               <div class="item">公司治理</div>
-            </div>
+            </div> -->
           </div>
           <div class="meneuInfo">
-            <div class="title">新闻中心</div>
-            <div class="listShow">
+            <div class="title" @click="handleSelect('/otherProject')">其他地区项目</div>
+            <!-- <div class="listShow">
               <div class="item">集团要闻</div>
               <div class="item">行业新闻</div>
-            </div>
+            </div> -->
           </div>
           <div class="meneuInfo">
-            <div class="title">联系我们</div>
-            <div class="listShow">
+            <div class="title" @click="handleSelect('/news')">行业新闻</div>
+            <!-- <div class="listShow">
               <div class="item">联系方式</div>
               <div class="item">人才招聘</div>
               <div class="item">合作伙伴</div>
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="right">
@@ -92,7 +92,7 @@
       </div>
     </div>
     <div class="footer">
-      2022©广东华鑫建筑科技有限公司<a
+      2022©广东三板斧建筑工程有限公司<a
         href="https://beian.miit.gov.cn/"
         target="_blank"
         >备案号：粤ICP备19111018号
@@ -159,6 +159,7 @@ export default {
       .title {
         font-size: 18px;
         margin-bottom: 20px;
+        cursor: pointer;
       }
       .listShow {
         margin-top: 10px;
@@ -200,19 +201,18 @@ export default {
 }
 .footer {
   padding: 15px 0;
-  border-top: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
-  background: #fff;
-  max-width: 1400px;
+  background: #282738;
+  color: #fff;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   a {
     margin-left: 10px;
-    color: #000;
     text-decoration: none;
+    color: #fff;
     &:active,
     &:hover {
-      color: #000;
+      color: #fff;
     }
   }
 }

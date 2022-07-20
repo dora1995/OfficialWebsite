@@ -43,10 +43,6 @@
                 <i class="el-icon-star-off icon"></i
                 ><span class="text">官网: www.taiheasphalt.com</span>
               </div>
-              <div class="infoListItem">
-                <i class="el-icon-star-off icon"></i
-                ><span class="text">      <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=918846171&site=qq&menu=yes"><img border="0" src="img/qq.png" alt="点击给我发消息" title="点击给我发消息"/>test</a></span>
-              </div>
             </div>
           </div>
         </div>
@@ -58,6 +54,9 @@
         target="_blank"
         >备案号：粤ICP备19111018号
       </a>
+    </div>
+    <div class="qq">
+      <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=372521918&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:372521918:53" alt="点击这里给我发消息" title="点击这里给我发消息"/></a>
     </div>
   </div>
 </template>
@@ -143,6 +142,7 @@ export default {
 .footer {
   padding: 15px 0;
   background: #282738;
+  border-top: 1px solid #e6e6e6;
   color: #fff;
   width: 100%;
   margin: 0 auto;
@@ -156,5 +156,10 @@ export default {
       color: #fff;
     }
   }
+}
+.qq {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
 }
 </style>

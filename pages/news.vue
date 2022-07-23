@@ -1,101 +1,40 @@
 <template>
   <div class="index">
-   <div v-swiper:mySwiper="swiperOption">
+    <div v-swiper:mySwiper="swiperOption">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <div
-            class="lunbo lun1"
-          ></div>
+          <div class="lunbo lun1"></div>
         </div>
         <div class="swiper-slide">
-          <div
-            class="lunbo lun2"
-          ></div>
+          <div class="lunbo lun2"></div>
         </div>
         <div class="swiper-slide">
-          <div
-            class="lunbo lun3"
-          ></div>
+          <div class="lunbo lun3"></div>
         </div>
       </div>
       <div id="swiper-pagination" class="swiper-pagination"></div>
     </div>
     <div class="news">
-      <div class="item">
-        <div class="img">
-          <img src="~assets/imgs/news/1.png" />
-          <div class="time">
-            <div class="day">{{ `07 - 07` }}</div>
-            <div class="year">22</div>
-          </div>
-        </div>
-        <div class="content">
-          <div class="title">乌兰浩特市餐厨垃圾处理项目（一期工程）环境影响评价</div>
-          <div class="text">泡沬混凝土又叫发泡混凝土，是通过发泡机器的发泡系统将获得专利权的泡沬剂充分发泡，并 将泡沬与水泥浆均匀搅拌，然后经过发泡机的泵送系统进行现浇施工或模具成型，经自然养护所形 成的一种含有大量封闭气孔的新型轻质保温材料。它属于气泡状绝热材料，突出特点是在混凝土内 部形成封闭的泡沬孔，使混凝土轻质化和保温隔热化。</div>
-          <div class="tolook">了解更多</div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="img">
-          <img src="~assets/imgs/news/1.png" />
-          <div class="time">
-            <div class="day">{{ `07 - 07` }}</div>
-            <div class="year">22</div>
-          </div>
-        </div>
-        <div class="content">
-          <div class="title">乌兰浩特市餐厨垃圾处理项目（一期工程）环境影响评价</div>
-          <div class="text">泡沬混凝土又叫发泡混凝土，是通过发泡机器的发泡系统将获得专利权的泡沬剂充分发泡，并 将泡沬与水泥浆均匀搅拌，然后经过发泡机的泵送系统进行现浇施工或模具成型，经自然养护所形 成的一种含有大量封闭气孔的新型轻质保温材料。它属于气泡状绝热材料，突出特点是在混凝土内 部形成封闭的泡沬孔，使混凝土轻质化和保温隔热化。</div>
-          <div class="tolook">了解更多</div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="img">
-          <img src="~assets/imgs/news/1.png" />
-          <div class="time">
-            <div class="day">{{ `07 - 07` }}</div>
-            <div class="year">22</div>
-          </div>
-        </div>
-        <div class="content">
-          <div class="title">乌兰浩特市餐厨垃圾处理项目（一期工程）环境影响评价</div>
-          <div class="text">泡沬混凝土又叫发泡混凝土，是通过发泡机器的发泡系统将获得专利权的泡沬剂充分发泡，并 将泡沬与水泥浆均匀搅拌，然后经过发泡机的泵送系统进行现浇施工或模具成型，经自然养护所形 成的一种含有大量封闭气孔的新型轻质保温材料。它属于气泡状绝热材料，突出特点是在混凝土内 部形成封闭的泡沬孔，使混凝土轻质化和保温隔热化。</div>
-          <div class="tolook">了解更多</div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="img">
-          <img src="~assets/imgs/news/1.png" />
-          <div class="time">
-            <div class="day">{{ `07 - 07` }}</div>
-            <div class="year">22</div>
-          </div>
-        </div>
-        <div class="content">
-          <div class="title">乌兰浩特市餐厨垃圾处理项目（一期工程）环境影响评价</div>
-          <div class="text">泡沬混凝土又叫发泡混凝土，是通过发泡机器的发泡系统将获得专利权的泡沬剂充分发泡，并 将泡沬与水泥浆均匀搅拌，然后经过发泡机的泵送系统进行现浇施工或模具成型，经自然养护所形 成的一种含有大量封闭气孔的新型轻质保温材料。它属于气泡状绝热材料，突出特点是在混凝土内 部形成封闭的泡沬孔，使混凝土轻质化和保温隔热化。</div>
-          <div class="tolook">了解更多</div>
-        </div>
-      </div>
-      <!-- <div v-for="(item, index) in newList" :key="index" class="item">
+      <div v-for="(item, index) in newList" :key="index" class="item">
         <div class="img">
           <img :src="item.img" />
-          <div class="time">
-            <div class="day">{{ `${item.month} - ${item.day}` }}</div>
-            <div class="year">{{ item.year }}</div>
-          </div>
         </div>
         <div class="content">
           <div class="title">{{ item.title }}</div>
           <div class="text">{{ item.alt }}</div>
-          <div class="tolook">了解更多</div>
+          <div class="tolook" @click="handleClick(item.id)">查看详情</div>
         </div>
-      </div> -->
+      </div>
+      <div style="text-align: center">
+        <el-pagination background layout="prev, pager, next" :total="page.total" @current-change="handleCurrentChange">
+        </el-pagination>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+
 export default {
   layout: 'PCLayout',
   data() {
@@ -107,35 +46,31 @@ export default {
         loop: true,
         autoplay: true,
       },
-      newList: [
-        {
-          title:
-            '乌兰浩特市餐厨垃圾处理项目（一期工程）环境影响评价 第二次公众参与公示',
-          alt: '泡沬混凝土又叫发泡混凝土，是通过发泡机器的发泡系统将获得专利权的泡沬剂充分发泡，并 将泡沬与水泥浆均匀搅拌，然后经过发泡机的泵送系统进行现浇施工或模具成型，经自然养护所形 成的一种含有大量封闭气孔的新型轻质保温材料。它属于气泡状绝热材料，突出特点是在混凝土内 部形成封闭的泡沬孔，使混凝土轻质化和保温隔热化。',
-          img: '/imgs/news/1.png',
-          year: '2022',
-          month: '07',
-          day: '22',
-        },
-        {
-          title:
-            '乌兰浩特市餐厨垃圾处理项目（一期工程）环境影响评价 第二次公众参与公示',
-          alt: '泡沬混凝土又叫发泡混凝土，是通过发泡机器的发泡系统将获得专利权的泡沬剂充分发泡，并 将泡沬与水泥浆均匀搅拌，然后经过发泡机的泵送系统进行现浇施工或模具成型，经自然养护所形 成的一种含有大量封闭气孔的新型轻质保温材料。它属于气泡状绝热材料，突出特点是在混凝土内 部形成封闭的泡沬孔，使混凝土轻质化和保温隔热化。',
-          img: '/imgs/news/1.png',
-          year: '2022',
-          month: '07',
-          day: '22',
-        },
-        {
-          title:
-            '乌兰浩特市餐厨垃圾处理项目（一期工程）环境影响评价 第二次公众参与公示',
-          alt: '泡沬混凝土又叫发泡混凝土，是通过发泡机器的发泡系统将获得专利权的泡沬剂充分发泡，并 将泡沬与水泥浆均匀搅拌，然后经过发泡机的泵送系统进行现浇施工或模具成型，经自然养护所形 成的一种含有大量封闭气孔的新型轻质保温材料。它属于气泡状绝热材料，突出特点是在混凝土内 部形成封闭的泡沬孔，使混凝土轻质化和保温隔热化。',
-          img: '/imgs/news/1.png',
-          year: '2022',
-          month: '07',
-          day: '22',
-        },
-      ],
+      page: {
+        total: 0,
+        current: 1,
+        pageSize: 10
+      },
+      newList: []
+    }
+  },
+  beforeMount () {
+    this.getData(1)
+  },
+  methods: {
+    handleClick(id) {
+      this.$router.push(`/newDetail/${id}`)
+    },
+    getData(current) {
+      const { pageSize } = this.page
+      this.$axios.get(`/admin/article/page?current=${current}&size=${pageSize}`).then(res => {
+        this.newList = res.data.records
+        this.page.total = res.data.total;
+        this.page.current = current
+      })
+    },
+    handleCurrentChange (current) {
+      this.getData(current)
     }
   },
 }
@@ -236,14 +171,11 @@ body {
         .tolook {
           display: inline-block;
           margin-top: 20px;
-          padding: 10px 40px;
-          border: 1px solid #e6e6e6;
+          padding: 15px 40px;
           cursor: pointer;
-          &:hover {
-            background: #c41a1f;
-            color: #fff;
-            font-weight: bold;
-          }
+          background: #5190F3;
+          color: #fff;
+          border-radius: 5px;
         }
       }
     }

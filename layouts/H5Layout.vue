@@ -7,25 +7,22 @@
       </div>
       <div v-show="menuShow" class="menu">
         <div class="menuItem" @click="toRoute('/')">首页</div>
-        <div class="menuItem" @click="toRoute('/m/produceShow')">产品展示</div>
-        <div class="menuItem" @click="toRoute('/m/dawanquProject')">大湾区项目</div>
-        <div class="menuItem" @click="toRoute('/m/otherProject')">其他地区项目</div>
+        <div class="menuItem" @click="toRoute('/m/produceCharacteristic')">产品特点</div>
+        <div class="menuItem" @click="toRoute('/m/producTradvantage')">产品优势</div>
+        <div class="menuItem" @click="toRoute('/m/otherProject')">行业案例</div>
         <div class="menuItem" @click="toRoute('/m/news')">行业新闻</div>
       </div>
     </div>
     <nuxt></nuxt>
     <div class="footerShow">
       <div class="listItem" @click="toRoute('/')">首页</div>
-      <div class="listItem" @click="toRoute('/m/produceShow')">产品展示</div>
-      <div class="listItem" @click="toRoute('/m/dawanquProject')">大湾区项目</div>
-      <div class="listItem" @click="toRoute('/m/otherProject')">其他地区项目</div>
+      <div class="listItem" @click="toRoute('/m/produceCharacteristic')">产品特点</div>
+      <div class="listItem" @click="toRoute('/m/producTradvantage')">产品优势</div>
+      <div class="listItem" @click="toRoute('/m/otherProject')">行业案例</div>
       <div class="listItem" @click="toRoute('/m/news')">行业新闻</div>
     </div>
     <div class="footer">
-      2022©广东华鑫建筑科技有限公司<a
-        href="https://beian.miit.gov.cn/"
-        target="_blank"
-        >备案号：粤ICP备19111018号
+      2022©广东三板斧建筑工程有限公司<a href="https://beian.miit.gov.cn/" target="_blank">备案号：粤ICP备19111018号
       </a>
     </div>
   </div>

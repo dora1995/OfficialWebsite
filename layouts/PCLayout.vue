@@ -158,8 +158,9 @@ export default {
   }
 }
 .qq {
+  z-index: 999;
   position: fixed;
-  bottom: 100px;
+  bottom: 20px;
   right: 20px;
 }
 </style>

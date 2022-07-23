@@ -15,10 +15,7 @@
       <div class="swiper-pagination"></div>
     </div>
     <div class="module">
-      <img src="/imgs/home/other1.png" alt="">
-    </div>
-    <div class="module">
-      <img src="/imgs/home/other2.png" alt="">
+      <img src="/imgs/home/producTradvantage.png" alt="">
     </div>
   </div>
 </template>
